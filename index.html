@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DonatMini.co - Manisnya Pas di Setiap Gigitan</title>
+  <meta name="description" content="DonatMini.co - donat mini empuk dengan topping Coklat Lumer, Gula Halus, dan Meses. Gunung Sindur, Tangerang Selatan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#beranda" class="logo">
+      <img id="logoImg" alt="Logo Mini Donut's" class="logo-img">
+      <span>donat<b>mini</b></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#beranda">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#produk">PRODUCT</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#kontak">CONTACT</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Ganti tema">🌙</button>
+      <button class="icon-btn cart-btn" id="cartOpen" aria-label="Buka keranjang">
+        🧺<span class="badge" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="hero-text reveal">
+      <span class="pill">🍩 Donat Mini Gunung Sindur</span>
+      <h1>Satu Gigitan,<br>Sejuta <span class="hl">Senyuman.</span></h1>
+      <p>Donat mini yang <b>empuk &amp; lembut</b> dengan topping <b>coklat lumer</b>, <b>gula halus</b>, dan <b>meses</b> yang bikin nagih. Cocok untuk camilan, hampers, arisan, atau teman nongkrong!</p>
+      <a href="#produk" class="btn btn-primary">AYO CEK MENU KITA</a>
+      <a href="#kontak" class="btn btn-ghost">HUBUNGI KAMI</a>
+    </div>
+    <div class="hero-img reveal">
+      <img id="heroImg" alt="Donat mini coklat lumer">
+      <div class="float-tag t1">Coklat Lumer</div>
+      <div class="float-tag t2">Gula Halus</div>
+      <div class="float-tag t3">Meses</div>
+    </div>
+  </section>
+
+  <!-- PROFIL BRAND -->
+  <section class="section alt" id="profil">
+    <div class="container narrow reveal">
+      <h2 class="title">PROFIL BRAND</h2>
+      <p class="lead">Nama <b>"DonatMini.co"</b> lahir dari dua hal yang kami cintai: <b>donat</b> yang empuk dan <b>mini</b> yang bikin kamu bisa coba semua rasa tanpa kenyang duluan. Satu nama sederhana yang menggambarkan semuanya: dibuat dengan telaten, dinikmati dengan senang.</p>
+      <div class="chips">
+        <span class="chip">🍫 Coklat Lumer</span>
+        <span class="chip">❄️ Gula Halus</span>
+        <span class="chip">🌈 Meses</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG KAMI -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <h2 class="title left">TENTANG KAMI</h2>
+        <p class="lead">DonatMini.co adalah brand kuliner kekinian yang menyajikan donat berukuran mini dengan tiga varian rasa favorit. Kami percaya camilan enak tidak harus ribet: tekstur lembut, topping melimpah, dan rasa manis yang pas di lidah.</p>
+        <p class="lead">Kami berlokasi di <b>Gunung Sindur, Tangerang Selatan</b>, siap melayani pesanan harian maupun untuk acara spesial kamu.</p>
+        <p class="lead"><b>100% Halal &amp; tanpa bahan pengawet.</b></p>
+      </div>
+      <div class="reveal">
+        <h3 class="sub">Yang bikin DonatMini beda:</h3>
+        <ol class="why">
+          <li><b>Empuk &amp; Lembut</b><span>Diolah segar, teksturnya fluffy di setiap gigitan.</span></li>
+          <li><b>Topping Lumer Melimpah</b><span>Coklat lumer, gula halus, dan meses penuh di atasnya.</span></li>
+          <li><b>3 Varian Rasa Favorit</b><span>Pilih satu rasa atau campur semuanya.</span></li>
+          <li><b>Harga Ramah Kantong</b><span>Mulai Rp 20.000, cocok untuk camilan harian.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section class="section alt" id="produk">
+    <div class="container">
+      <h2 class="title">⌄ Menu Kami ⌄</h2>
+      <p class="center muted">Pilih paket dan varian rasa, lalu masukkan ke keranjang.</p>
+      <div class="products" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="title">⌄ Gallery ⌄</h2>
+      <p class="center muted">3 varian rasa andalan kami. Beli satuan atau ambil paket <b>bundling / tebus murah</b> otomatis di keranjang.</p>
+      <div class="bundle-info" id="bundleInfo"></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-f="all">Semua</button>
+        <button class="filter" data-f="coklat">Coklat Lumer</button>
+        <button class="filter" data-f="gula">Gula Halus</button>
+        <button class="filter" data-f="meses">Meses</button>
+      </div>
+      <div class="gallery" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="section contact" id="kontak">
+    <div class="container narrow center reveal">
+      <h2 class="title">PENASARAN DENGAN KAMI? HUBUNGI KONTAK DI BAWAH INI</h2>
+      <ul class="contact-list">
+        <li>📞 <a href="https://wa.me/6289662494592" target="_blank" rel="noopener">0896 - 6249 - 4592</a></li>
+        <li>📍 Jln Gn Sindur No 11 RT 03 RW 07, Gunung Sindur, Tangerang Selatan</li>
+        <li>🕙 Buka setiap hari 10.00 – 21.00 WIB</li>
+        <li>🛍️ Shopee: <a href="#" id="shopeeLink" target="_blank" rel="noopener">DonatMini.co</a></li>
+      </ul>
+      <a href="#" id="waDirect" class="btn btn-wa" target="_blank" rel="noopener">KIRIM LEWAT WHATSAPP</a>
+      <a href="#" id="shopeeDirect" class="btn btn-shopee" target="_blank" rel="noopener">BELI DI SHOPEE</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Terima Kasih Sudah Berkunjung :)</p>
+    <p>© 2026 DonatMini.co — dibuat dengan 💛</p>
+  </footer>
+
+  <!-- KERANJANG -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Keranjang">
+    <div class="cart-head">
+      <h3>🧺 Keranjang</h3>
+      <button class="icon-btn" id="cartClose" aria-label="Tutup">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="total"><span>TOTAL</span><b id="cartTotal">Rp 0</b></div>
+      <label class="note-label" for="orderName">Nama pemesan</label>
+      <input type="text" id="orderName" placeholder="Nama kamu">
+      <label class="note-label" for="orderNote">Catatan (opsional)</label>
+      <textarea id="orderNote" rows="2" placeholder="Alamat / waktu ambil / catatan lain"></textarea>
+      <button class="btn btn-shopee block" id="checkoutShopee">🛍️ PESAN VIA SHOPEE</button>
+      <button class="btn btn-wa block" id="checkoutWA">💬 PESAN VIA WHATSAPP</button>
+      <p class="hint" id="shopeeHint">Pesanan Shopee: salin ringkasan otomatis, lalu cari produk di toko Shopee kami.</p>
+    </div>
+  </aside>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="icon-btn lb-close" id="lbClose" aria-label="Tutup">✕</button>
+    <figure>
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
