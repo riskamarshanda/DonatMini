@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Donat Mini Sindur</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Menghubungkan file CSS terpisah -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<!-- Navbar dengan Logo di Pojok Kiri -->
+<header class="navbar"><div class="navbar-in">
+  <img class="nav-logo" src="URL_GAMBAR_1_ANDA" alt="Logo Donat Mini Sindur">
+  <nav>
+    <a href="#beranda" class="nav-link active" data-s="beranda">BERANDA</a><span>|</span>
+    <a href="#produk" class="nav-link" data-s="produk">PRODUK</a><span>|</span>
+    <a href="#kontak" class="nav-link" data-s="kontak">KONTAK</a>
+  </nav>
+</div></header>
+
+<!-- Hero Section -->
+<section id="beranda" class="hero">
+  <h1 class="tagline script">Donat Mini Sindur</h1>
+  <p class="lead">Nikmati kelezatan donat mini lumer dengan berbagai varian rasa premium khas Gunung Sindur.</p>
+</section>
+
+<div class="banner">✨ MANISNYA PAS, LUMERNYA PAS DI HATI! ✨</div>
+
+<!-- Produk Section -->
+<section id="produk" class="produk">
+  <h2>Pilihan Menu Favorit</h2>
+  <div class="carousel">
+    <div class="pcard active" onclick="selectProduct(0)">
+      <div class="photo"><img src="URL_GAMBAR_PRODUK_1" class="jar" alt="Donat Coklat"></div>
+      <div class="pname"><span>Donat Mini Coklat</span><span>Rp10k</span></div>
+    </div>
+    <div class="pcard" onclick="selectProduct(1)">
+      <div class="photo"><img src="URL_GAMBAR_PRODUK_2" class="jar" alt="Donat Keju"></div>
+      <div class="pname"><span>Donat Mini Keju</span><span>Rp10k</span></div>
+    </div>
+  </div>
+
+  <div class="product-detail">
+    <h3 id="prodTitle">Donat Mini Coklat</h3>
+    <p id="prodDesc">Donat mini empuk dengan taburan toping coklat lumer premium yang melimpah di setiap gigitan.</p>
+  </div>
+
+  <div class="add-cart-wrap">
+    <button class="add-cart-btn" onclick="addToCart()">+ Tambah ke Keranjang</button>
+  </div>
+
+  <!-- Keranjang Pesanan -->
+  <div class="cart-box">
+    <h4>Keranjang Pesanan Anda</h4>
+    <ul id="cartList">
+      <li class="cart-empty">Belum ada produk yang dipilih.</li>
+    </ul>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotalPrice">Rp 0</span>
+    </div>
+    <div class="cart-actions">
+      <button id="checkoutBtn" onclick="checkoutWhatsApp()">Pesan via WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak Section -->
+<section id="kontak" class="kontak">
+  <h3>Hubungi Kami & Pemesanan</h3>
+  <p class="addr">📍 Lokasi: Gunung Sindur, Bogor, Jawa Barat</p>
+  <p class="ig">Instagram: @donatminisindur</p>
+  <a href="https://wa.me/6281234567890" class="contact-pill" target="_blank">Chat WhatsApp</a>
+  <div class="script">Lezat & Higienis</div>
+</section>
+
+<footer class="credit">
+  &copy; 2026 Donat Mini Sindur. All Rights Reserved.
+</footer>
+
+</div>
+
+<!-- Menghubungkan file JavaScript terpisah -->
+<script src="script.js"></script>
+</body>
+</html>
